@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: black;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.nav-holder a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8B8B8B;
+  transition: 0.3s;
+  /* transition-delay: 0.1s; */
+}
+
+.nav-holder a:hover {
+  background: #20222437;
+}
+
+.nav-holder a.selected-nav {
+  background: #202224 !important;
+  transition: 0.6s;
+}
+
+.rdp-range_middle button {
+  border-radius: 50px !important;
+}
+
+.rdp-selected button {
+  background: #202224;
+  border: none !important;
+  outline: none !important;
+}
+
+.rdp-selected {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+.rdp-range_middle {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.rdp-range_start button,
+.rdp-range_end button {
+  background: #44474D !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.rdp-range_start,
+.rdp-range_end {
+  background: #44474D !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.rdp-button_previous svg {
+  fill: white;
+}
+
+.rdp-button_next svg {
+  fill: white;
+}
+
+.rdp-weeks th {
+  font-size: 14px;
+  font-weight: 400;
+  color: white !important;
+}
+
+.rdp-weeks button {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8B8B8B;
+}
