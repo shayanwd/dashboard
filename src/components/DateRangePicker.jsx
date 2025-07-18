@@ -51,7 +51,7 @@ export default function DateRangePicker({ value, onChange, className = '', place
         <div className={`relative ${className}`} ref={ref}>
             <button
                 type="button"
-                className="flex items-center min-w-[240px] bg-[#ffffff1c] border border-[#ffffff0e] p-[10px] rounded-[10px]  gap-[30px] justify-between"
+                className="flex items-center min-w-[240px] bg-[#ffffff1c] border border-[#ffffff0e] p-[11px] rounded-[10px]  gap-[30px] justify-between"
                 onClick={() => setShowPicker((v) => !v)}
             >
                 <span className='text-[14px] text-[white] font-[400]'>{displayValue}</span>

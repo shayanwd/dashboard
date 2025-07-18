@@ -3,10 +3,110 @@ import PageHeader from '../components/PageHeader';
 import CallAttemptsChart from '../components/CallAttemptsChart';
 import ConversationTimeChart from '../components/ConversationTimeChart';
 import ActiveWorkingChart from '../components/ActiveWorkingChart';
-import { Ranglist } from '../components/Ranglist';
+import { PreSettingRanglist } from '../components/PreSettingRanglist';
 import MetricCard from '../components/MetricCard';
 
 export default function PreSetting() {
+
+    const leads = [
+        {
+            benutzer: "Florian Hamphoff",
+            anwahlversuche: "Ads",
+            erreicht: "Meta",
+            gespraechszeit: "Facebook Ads",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Sophie Martinez",
+            anwahlversuche: "Marketing",
+            erreicht: "Google",
+            gespraechszeit: "Search Ads",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Liam O'Connor",
+            anwahlversuche: "Social Media",
+            erreicht: "Twitter",
+            gespraechszeit: "Promoted Tweets",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Emma Thompson",
+            anwahlversuche: "Content",
+            erreicht: "LinkedIn",
+            gespraechszeit: "Sponsored Content",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Noah Williams",
+            anwahlversuche: "SEO",
+            erreicht: "Bing",
+            gespraechszeit: "Bing Ads",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Olivia Brown",
+            anwahlversuche: "Email",
+            erreicht: "Mailchimp",
+            gespraechszeit: "Newsletter Campaign",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "James Johnson",
+            anwahlversuche: "Video",
+            erreicht: "YouTube",
+            gespraechszeit: "Video Ads",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Ava Davis",
+            anwahlversuche: "Influencer",
+            erreicht: "Instagram",
+            gespraechszeit: "Influencer Partnerships",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Ethan Clark",
+            anwahlversuche: "Affiliate",
+            erreicht: "Amazon",
+            gespraechszeit: "Affiliate Marketing",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Ethan Clark",
+            anwahlversuche: "Affiliate",
+            erreicht: "Amazon",
+            gespraechszeit: "Affiliate Marketing",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Ethan Clark",
+            anwahlversuche: "Affiliate",
+            erreicht: "Amazon",
+            gespraechszeit: "Affiliate Marketing",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+        {
+            benutzer: "Mia Wilson",
+            anwahlversuche: "Analytics",
+            erreicht: "HubSpot",
+            gespraechszeit: "Performance Tracking",
+            gelegteSettings: "-",
+            gelegteClosing: "-"
+        },
+
+    ];
 
     return (
         <>
@@ -100,7 +200,7 @@ export default function PreSetting() {
                             </div>
                         </div>
                         <div className="border-[rgba(21,21,21,1)] border-b"></div>
-                        <Ranglist />
+                        <PreSettingRanglist leads={leads} />
                     </main>
                 </div>
             </div>
