@@ -16,8 +16,8 @@ const MetricCard = ({ title, value, percentage, isPositive, icon, highlighted = 
                 {percentage && (
                     <div className={`text-xs font-normal w-[50px] sm:w-[57px] ${isPositive ? 'text-[rgba(115,186,148,1)]' : 'text-[rgba(186,115,115,1)]'}`}>
                         <div className="relative w-full">
-                            <div className="bg-[rgba(0,0,0,0.4)] absolute z-0 flex min-h-[5px] w-[28px] sm:w-[31px] bottom-[-3px] h-[5px] rounded-[50%] right-[11px] sm:right-[13px]" />
-                            <div className={`border z-0 flex w-full items-center justify-center p-1 rounded-md border-solid ${isPositive
+                            <div className="bg-[rgba(0,0,0,0.4)] blur-[4px] absolute z-0 flex min-h-[5px] w-[28px] sm:w-[31px] bottom-[-3px] h-[5px] rounded-[50%] right-[11px] sm:right-[13px]" />
+                            <div className={`border z-2 relative flex w-full items-center justify-center p-1 rounded-md border-solid ${isPositive
                                 ? 'bg-[rgba(38,56,48,1)] border-[rgba(47,66,58,1)]'
                                 : 'bg-[rgba(56,38,38,1)] border-[rgba(66,47,47,1)]'
                                 }`}>

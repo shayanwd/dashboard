@@ -8,7 +8,7 @@ export const MonthlyOverview: React.FC<MonthlyOverviewProps> = ({ className = ''
   const [selectedMonth, setSelectedMonth] = useState("April");
 
   return (
-    <section className={`bg-[rgba(255,255,255,0.09)] border flex w-full flex-col overflow-hidden items-stretch justify-center mt-1 p-5 rounded-[10px] border-[rgba(255,255,255,0.06)] border-solid max-md:max-w-full ${className}`}>
+    <section className={`chipku-blur bg-[rgba(255,255,255,0.09)] border flex w-full flex-col overflow-hidden items-stretch justify-center mt-1 p-5 rounded-[10px] border-[rgba(255,255,255,0.06)] border-solid max-md:max-w-full ${className}`}>
       <div className="flex w-full items-center gap-8 leading-none flex-wrap max-md:max-w-full">
         <h2 className="text-white text-base font-semibold uppercase self-stretch flex-1 shrink basis-5 my-auto max-md:max-w-full">
           Monatliche Übersicht
@@ -55,7 +55,7 @@ export const MonthlyOverview: React.FC<MonthlyOverviewProps> = ({ className = ''
           <div className="bg-[rgba(255,255,255,0.09)] flex min-h-4 w-full flex-col overflow-hidden justify-between mt-[13px] rounded-[10px] max-md:max-w-full">
             <div className="bg-[rgba(0,189,249,1)] flex min-h-4 w-[30px] flex-1 rounded-sm" />
           </div>
-          <div className="flex w-full gap-9 text-sm text-white font-normal whitespace-nowrap leading-none justify-between flex-wrap mt-[13px] max-md:max-w-full">
+          <div className="flex w-full opacity-30 gap-9 text-sm text-white font-normal whitespace-nowrap leading-none justify-between flex-wrap mt-[13px] max-md:max-w-full">
             <div>0</div>
             <div>25</div>
             <div>50</div>

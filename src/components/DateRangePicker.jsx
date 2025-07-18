@@ -51,7 +51,7 @@ export default function DateRangePicker({ value, onChange, className = '', place
         <div className={`relative ${className}`} ref={ref}>
             <button
                 type="button"
-                className="flex items-center min-w-[240px] bg-[#ffffff1c] border border-[#ffffff0e] p-[11px] rounded-[10px]  gap-[30px] justify-between"
+                className="flex items-center min-w-[240px] bg-[#FFFFFF17] border border-[#FFFFFF0F] p-[10px] leading-[100%] h-[36px] rounded-[10px] gap-[30px] justify-between"
                 onClick={() => setShowPicker((v) => !v)}
             >
                 <span className='text-[14px] text-[white] font-[400]'>{displayValue}</span>
@@ -64,7 +64,7 @@ export default function DateRangePicker({ value, onChange, className = '', place
 
             </button>
             {showPicker && (
-                <div className="absolute z-50 mt-2 left-0 bg-[#171819b5] border border-[#ffffff0e] p-[10px] rounded-[10px] backdrop-blur-md">
+                <div className="absolute z-50 mt-2 left-0 bg-[#0000001A] border border-[#FFFFFF0F] p-[10px] rounded-[10px] backdrop-blur-[27px]">
                     <DayPicker
                         mode="range"
                         selected={internalRange}
@@ -74,12 +74,12 @@ export default function DateRangePicker({ value, onChange, className = '', place
                         toYear={maxYear}
                         classNames={{
                             months: 'flex gap-4',
-                            month: 'bg-[#171819] border border-[#ffffff0e] p-[10px] rounded-[10px]',
+                            month: 'bg-[#0000001A] border border-[#FFFFFF0F] p-[10px] rounded-[10px]',
                             caption: 'text-text',
-                            day: 'rounded-full hover:bg-accent2 hover:text-white',
-                            day_selected: 'bg-accent2 text-white',
-                            day_range_middle: 'bg-accent2/30',
-                            day_today: 'border border-accent2',
+                            day: 'rounded-full hover:bg-[#FFFFFF17] hover:text-white',
+                            day_selected: 'bg-[#FFFFFF17] text-white',
+                            day_range_middle: '!bg-[#FFFFFF17]',
+                            day_today: 'border border-[#FFFFFF17]',
                         }}
                         styles={{
                             months: { background: 'transparent' },
@@ -89,7 +89,7 @@ export default function DateRangePicker({ value, onChange, className = '', place
                     />
                     <div className="flex justify-end mt-2">
                         <button
-                            className="bg-[#171819b5] border border-[#ffffff0e] p-[10px] rounded-[10px] mr-2"
+                            className="bg-[#FFFFFF17] border border-[#ffffff0e] p-[10px] rounded-[10px] mr-2"
                             onClick={handleDone}
                         >
                             Done

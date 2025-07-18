@@ -55,11 +55,11 @@ const Umsatz = lazy(() => import('./pages/Umsatz'));
 
 function App() {
   return (
-    <div className="flex min-h-screen bg-dark w-full">
+    <div className="flex min-h-screen bg-dark w-full main-wrapper">
       <Sidebar />
       <div className="flex flex-col flex-1 w-full">
         <Header />
-        <main className="flex-1 bg-dark min-h-screen w-full">
+        <main className="flex-1 min-h-screen w-full">
           <Suspense fallback={<div className="flex items-center justify-center h-screen">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>
           </div>}>

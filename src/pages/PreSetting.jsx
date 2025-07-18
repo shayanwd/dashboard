@@ -110,7 +110,7 @@ export default function PreSetting() {
 
     return (
         <>
-            <div className="bg-black min-h-screen">
+            <div className="min-h-screen">
                 <div className="flex">
 
                     <main className="flex-1 lg:ml-0">
@@ -123,15 +123,15 @@ export default function PreSetting() {
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
-                                    isPositive={false}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    isPositive={true}
+                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true"
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="1.0%"
                                     percentage="2.5%"
-                                    isPositive={false}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    isPositive={true}
+                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true"
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
@@ -179,8 +179,8 @@ export default function PreSetting() {
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
-                                    isPositive={false}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    isPositive={true}
+                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true"
                                 />
                             </div>
 

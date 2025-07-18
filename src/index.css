@@ -104,3 +104,170 @@ body {
   font-weight: 400;
   color: #8B8B8B;
 }
+
+nav .active img.object-contain {
+  filter: brightness(0) invert(1);
+}
+
+nav.hidden {
+  position: relative;
+  z-index: 1;
+}
+
+nav.hidden::before {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  height: 86%;
+  max-height: 1197px;
+  width: auto;
+  aspect-ratio: 668/1197;
+  background-image: url(../sidebar-blur_converted.webp);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.main-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.main-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  height: auto;
+  max-width: 1134px;
+  margin: auto;
+  width: 90%;
+  aspect-ratio: 1134/737;
+  background-image: url(blur-top-center.webp);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.main-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  height: 100%;
+  max-height: 1205px;
+  margin: auto;
+  width: auto;
+  aspect-ratio: 669 / 1205;
+  background-image: url(blur-mid-right_converted.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.khenchde>.chipku-blur {
+  max-width: 100% !important;
+}
+
+.chipku-blur {
+  position: relative;
+  z-index: 1;
+}
+
+.chipku-blur::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  max-width: 341px;
+  aspect-ratio: 341/167;
+  background: url(chipku-bottom-blur.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  z-index: -2;
+  opacity: 0.91;
+  pointer-events: none;
+}
+
+.table-blur {
+  position: relative;
+  z-index: 1;
+}
+
+.table-blur::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 70%;
+  max-width: 493px;
+  aspect-ratio: 493 / 375;
+  background: url(table-blur_converted.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  z-index: -2;
+  opacity: 0.91;
+  pointer-events: none;
+}
+
+.quelle-blur {
+  position: relative;
+  z-index: 1;
+}
+
+.quelle-blur::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  max-width: 669px;
+  aspect-ratio: 669 / 702;
+  background: url(quelle-blur_converted.webp);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  z-index: -2;
+  opacity: 0.91;
+  pointer-events: none;
+}
+
+.rangliste-blur {
+  position: relative;
+  z-index: 1;
+}
+
+.rangliste-blur::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  max-width: 669px;
+  aspect-ratio: 669 / 1031;
+  background: url(table-topright-blur_converted.webp);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  z-index: -2;
+  opacity: 0.91;
+  pointer-events: none;
+}
+
+.rdp-range_middle button {
+  background: #FFFFFF17 !important;
+}

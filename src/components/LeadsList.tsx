@@ -225,7 +225,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
       </div>
 
       {/* Mobile Card View */}
-      <div className="block sm:hidden space-y-3">
+      <div className="block sm:hidden space-y-3 table-blur">
         {paginatedLeads.map((lead, index) => (
           <div key={index} className="bg-[rgba(255,255,255,0.09)] border p-4 rounded-[10px] border-[rgba(255,255,255,0.06)] border-solid">
             <div className="text-white font-semibold text-lg mb-2">{lead.name}</div>
@@ -258,7 +258,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
       </div>
 
       {/* Desktop Table View */}
-      <div className="hidden sm:block w-full">
+      <div className="hidden sm:block w-full table-blur">
         {/* Table Header */}
         <div className="flex w-full items-center gap-4 lg:gap-8 text-sm text-[rgba(139,139,139,1)] font-normal leading-none flex-wrap pl-[18px] pr-2 py-2.5 rounded-[10px]">
           <button

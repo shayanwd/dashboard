@@ -35,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   ];
 
   return (
-    <header className="flex items-center justify-between px-5 py-5 bg-dark border-b border-[#151515]">
+    <header className="flex items-center justify-between px-5 py-5 border-b border-[#151515]">
       <div className="flex gap-2 relative">
         <DateRangePicker value={range} onChange={setRange} />
         <CampaignDropdown

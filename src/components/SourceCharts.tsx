@@ -10,7 +10,7 @@ interface SourceChartsProps {
   className?: string;
 }
 
-export const SourceCharts: React.FC<SourceChartsProps> = ({ className = '' }) => {
+export const SourceCharts: React.FC<SourceChartsProps> = ({ className = 'quelle-blur' }) => {
   const singleSourceData: ChartData[] = [
     { label: "Ads", value: 256, color: "rgba(255,147,147,1)" }
   ];

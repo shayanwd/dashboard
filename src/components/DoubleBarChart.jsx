@@ -16,7 +16,7 @@ export default function DoubleBarChart() {
     const xLabels = Array.from({ length: 12 }, (_, i) => i * 25);
 
     return (
-        <div className="bg-[rgba(32,34,36,1)] rounded-xl p-0 flex flex-col justify-between w-full" style={{ minWidth: 350, maxWidth: 500, paddingBottom: 16 }}>
+        <div className="chipku-blur bg-[#FFFFFF17] rounded-xl p-0 flex flex-col justify-between w-full" style={{ minWidth: 350, maxWidth: 500, paddingBottom: 16 }}>
             {/* Toggle */}
             <div className="flex gap-2 mb-4 px-6 pt-6">
                 <button

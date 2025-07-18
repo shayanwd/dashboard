@@ -9,7 +9,7 @@ export default function Aktivitaet() {
     return (
         <>
 
-            <div className="bg-black min-h-screen">
+            <div className="min-h-screen aktivitaet-blur">
                 <div className="flex">
                     <main className="flex-1 lg:ml-0">
                         <div className=" px-3 sm:px-5 pt-6 pb-0 sm:pt-8">

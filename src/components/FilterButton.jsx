@@ -134,7 +134,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
         <div className="relative">
             <div
                 ref={ref}
-                className={`bg-[rgba(255,255,255,0.09)] border flex items-center justify-between w-full sm:w-[200px] pl-2.5 pr-1 py-2 rounded-[10px] cursor-pointer transition-all duration-200 ${isModalOpen
+                className={`bg-[rgba(255,255,255,0.09)] border flex items-center justify-between w-full sm:w-[200px] p-[3px_3px_3px_10px] rounded-[10px] cursor-pointer transition-all duration-200 ${isModalOpen
                     ? 'border-[#7EBAFF] border-2 shadow-[0_0_10px_rgba(74,144,226,0.3)]'
                     : 'border-[rgba(255,255,255,0.06)] border-solid'
                     } ${className}`}
@@ -155,11 +155,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
             {/* Modal */}
             {isModalOpen && (
                 <div className="absolute top-full mt-2 right-0 z-50">
-                    <div className="bg-[#1a1a1a] border border-[#333] rounded-lg shadow-lg w-80 max-h-96 overflow-y-auto">
+                    <div className="bg-[#0000001A] backdrop-blur-[64px] border border-[#FFFFFF0F] rounded-lg shadow-lg w-80 max-h-96 overflow-y-auto">
                         {/* Filter Categories */}
                         <div className="p-4 space-y-2">
                             {/* Quelle */}
-                            <div className="border-b border-[#333] pb-2">
+                            <div className="border-b border-[#FFFFFF0F] pb-2">
                                 <div
                                     className="flex items-center justify-between cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('quelle')}
@@ -202,7 +202,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* Medium */}
-                            <div className="border-b border-[#333] pb-2">
+                            <div className="border-b border-[#FFFFFF0F] pb-2">
                                 <div
                                     className="flex items-center justify-between cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('medium')}
@@ -245,7 +245,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* Kampagne */}
-                            <div className="border-b border-[#333] pb-2">
+                            <div className="border-b border-[#FFFFFF0F] pb-2">
                                 <div
                                     className="flex items-center justify-between cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('kampagne')}
@@ -288,7 +288,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Source */}
-                            <div className="border-b border-[#333] pb-2">
+                            <div className="border-b border-[#FFFFFF0F] pb-2">
                                 <div
                                     className="flex items-center justify-between cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmSource')}
@@ -331,7 +331,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Medium */}
-                            <div className="border-b border-[#333] pb-2">
+                            <div className="border-b border-[#FFFFFF0F] pb-2">
                                 <div
                                     className="flex items-center justify-between cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmMedium')}
@@ -374,7 +374,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Campaign */}
-                            <div className="border-b border-[#333] pb-2">
+                            <div className="border-b border-[#FFFFFF0F] pb-2">
                                 <div
                                     className="flex items-center justify-between cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmCampaign')}
@@ -417,7 +417,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Term */}
-                            <div className="border-b border-[#333] pb-2">
+                            <div className="border-b border-[#FFFFFF0F] pb-2">
                                 <div
                                     className="flex items-center justify-between cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmTerm')}

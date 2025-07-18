@@ -80,7 +80,7 @@ export const PreSettingRanglist = ({ className = '', leads }) => {
     );
 
     return (
-        <section className={`flex w-full flex-col items-stretch justify-center px-3 sm:px-5 py-6 sm:py-8 border-[rgba(21,21,21,1)] border-b ${className}`}>
+        <section className={`rangliste-blur flex w-full flex-col items-stretch justify-center px-3 sm:px-5 py-6 sm:py-8 border-[rgba(21,21,21,1)] border-b ${className}`}>
             <div className="flex flex-row sm:flex-row items-start sm:items-center gap-3 sm:gap-5 mb-5">
                 <h2 className="text-white text-2xl sm:text-[32px] font-medium leading-none flex-1">
                     Rangliste
@@ -91,7 +91,7 @@ export const PreSettingRanglist = ({ className = '', leads }) => {
             </div>
 
             {/* Mobile Card View */}
-            <div className="block sm:hidden space-y-3">
+            <div className="block sm:hidden space-y-3 table-blur">
                 {paginatedLeads.length > 0 ? (
                     paginatedLeads.map((lead, index) => (
                         <div key={index} className="bg-[rgba(255,255,255,0.09)] border p-4 rounded-[10px] border-[rgba(255,255,255,0.06)] border-solid">
@@ -128,7 +128,7 @@ export const PreSettingRanglist = ({ className = '', leads }) => {
             </div>
 
             {/* Desktop Table View */}
-            <div className="hidden sm:block w-full">
+            <div className="hidden sm:block w-full table-blur">
                 {/* Table Header */}
                 <div className="flex w-full items-center gap-4 lg:gap-8 text-sm text-[rgba(139,139,139,1)] font-normal leading-none flex-wrap pl-[18px] pr-2 py-2.5 rounded-[10px]">
                     <button

@@ -53,7 +53,7 @@ export default function DoubleLineChart() {
 
     if (!hasData) {
         return (
-            <div className="bg-[rgba(32,34,36,1)] rounded-xl p-6 w-full max-w-2xl">
+            <div className="chipku-blur bg-[#FFFFFF17] rounded-xl p-6 w-full max-w-2xl">
                 {/* Chart Container */}
                 <div className="relative h-64 mb-6">
                     {/* Y-axis labels */}
@@ -89,7 +89,7 @@ export default function DoubleLineChart() {
     }
 
     return (
-        <div className="bg-[rgba(32,34,36,1)] rounded-xl p-6 w-full max-w-2xl">
+        <div className="chipku-blur bg-[#FFFFFF17] rounded-xl p-6 w-full max-w-2xl">
             {/* Chart Container */}
             <div className="relative h-64 mb-6">
                 {/* Y-axis labels */}

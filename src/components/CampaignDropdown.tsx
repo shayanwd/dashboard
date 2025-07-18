@@ -44,15 +44,15 @@ export default function CampaignDropdown({
         <div className={`relative min-w-[240px] ${className}`} ref={ref}>
             <button
                 type="button"
-                className={`flex items-center justify-between w-full bg-[#ffffff1c] border p-[10px] rounded-[10px] text-[16px] text-white font-[400] focus:outline-none ${open ? 'border-[#7EBAFF]' : 'border-[#ffffff0e]'}`}
+                className={`btn-campaign flex items-center justify-between w-full bg-[#ffffff1c] border p-[10px] rounded-[10px] text-[14px] leading-[100%] h-[36px] text-white font-[400] focus:outline-none ${open ? 'border-[#7EBAFF]' : 'border-[#ffffff0e]'}`}
                 onClick={() => setOpen(v => !v)}
             >
                 <span>{value || placeholder}</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9" /></svg>
             </button>
             {open && (
-                <div className="absolute left-0 mt-2 w-full bg-[#171819b5] border border-[#ffffff0e] rounded-[16px] shadow-lg z-50 p-2 backdrop-blur-md">
-                    <div className="flex items-center bg-[#171819] border border-[#ffffff0e] rounded-[10px] px-3 py-2 mb-2">
+                <div className="absolute left-0 mt-2 w-full bg-[#0000001A] border border-[#FFFFFF0F] rounded-[16px] shadow-lg z-50 p-2 backdrop-blur-[27px]">
+                    <div className="flex items-center bg-[#E6F3FF24] border border-[#e6f3ff00] rounded-[10px] px-3 py-2 mb-2">
                         <input
                             type="text"
                             className="bg-transparent outline-none text-white placeholder:text-[#bdbdbd] flex-1"
@@ -69,7 +69,7 @@ export default function CampaignDropdown({
                         {filteredOptions.map(opt => (
                             <button
                                 key={opt}
-                                className={`w-full text-left px-3 py-2 rounded-[10px] text-white text-[16px] font-[400] hover:bg-[#23242a] transition ${value === opt ? 'bg-[#23242a]' : ''}`}
+                                className={`w-full text-left px-3 py-2 rounded-[10px] text-white text-[16px] font-[400] hover:bg-[#E6F3FF24] transition ${value === opt ? 'bg-[#E6F3FF24]' : ''}`}
                                 onClick={() => { onChange && onChange(opt); setOpen(false); setSearch(''); }}
                             >
                                 {opt}
