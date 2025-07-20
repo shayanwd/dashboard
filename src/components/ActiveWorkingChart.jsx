@@ -24,7 +24,7 @@ const options = {
         zoom: { enabled: false },
     },
     grid: {
-        borderColor: 'rgba(255,255,255,0.08)',
+        borderColor: '#252627',
         strokeDashArray: 6,
         yaxis: { lines: { show: true } },
         xaxis: { lines: { show: false } },
@@ -32,7 +32,7 @@ const options = {
     legend: {
         show: false,
     },
-    colors: ['#CFFF5A', '#5AFFE4'],
+    colors: ['#FFE293', '#FF9393'],
     stroke: {
         width: 3,
         curve: 'smooth',
@@ -45,13 +45,15 @@ const options = {
         categories: [27, 29, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25],
         labels: {
             style: {
-                colors: '#A2A3A5',
-                fontSize: '13px',
+                colors: '#56575D',
+                fontSize: '14px',
                 fontWeight: 400,
             },
         },
         axisBorder: { show: false },
         axisTicks: { show: false },
+        tickPlacement: 'on',
+        position: 'bottom',
     },
     yaxis: {
         min: 0,
@@ -59,11 +61,12 @@ const options = {
         tickAmount: 4,
         labels: {
             style: {
-                colors: '#A2A3A5',
-                fontSize: '13px',
+                colors: '#56575D',
+                fontSize: '14px',
                 fontWeight: 400,
             },
         },
+        opposite: true,
     },
     tooltip: {
         theme: 'dark',
@@ -78,17 +81,17 @@ export default function ActiveWorkingChart() {
 
     return (
         <section className="chipku-blur bg-[#FFFFFF17] rounded-2xl p-4 sm:p-5 w-full max-w-full shadow-lg relative border-[rgba(255,255,255,0.06)] border-solid border">
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex flex-col lg:flex-row gap-2 lg:items-center items-start justify-between mb-2">
                 <div className="flex flex-col gap-2">
                     <span className="text-[white] text-[16px] font-semibold uppercase tracking-wider">Aktive Arbeitszeit</span>
                     <span className="flex gap-2">
-                        <span className="bg-[#2C2C2C] text-[#C9FF93] px-3 py-1 rounded-[8px] text-[12px] font-medium">Closer Academy</span>
-                        <span className="bg-[#2C2C2C] text-[#93FFE9] px-3 py-1 rounded-[8px] text-[12px] font-medium">Beratungsgespräch</span>
+                        <span className="bg-[#2C2C2C] text-[#FFE293] px-3 py-1 rounded-[8px] text-[12px] font-medium">Closer Academy</span>
+                        <span className="bg-[#2C2C2C] text-[#FF9393] px-3 py-1 rounded-[8px] text-[12px] font-medium">Beratungsgespräch</span>
 
                     </span>
                 </div>
-                <div className="flex items-center gap-2">
-                    <div ref={filterBtnRef}>
+                <div className="flex items-center gap-2 lg:w-auto w-full">
+                    <div className=' lg:w-auto w-full' ref={filterBtnRef}>
                         <FilterButton onClick={() => setFilterOpen((v) => !v)} />
                     </div>
                     <OptionsDropdownButton

@@ -149,7 +149,7 @@ export const SalesRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Datum</div>
                         {sortField === 'datum' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? ' ' : ' '}</span>
                         )}
                     </button>
                     <div className="min-w-0 flex-1 truncate">Name</div>

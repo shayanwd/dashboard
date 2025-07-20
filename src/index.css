@@ -197,6 +197,7 @@ nav.hidden::before {
   z-index: -2;
   opacity: 0.91;
   pointer-events: none;
+  border-radius: 12px;
 }
 
 .table-blur {

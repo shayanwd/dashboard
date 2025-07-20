@@ -80,7 +80,7 @@ export const ClosingRanglist = ({ className = '', leads }) => {
     );
 
     return (
-        <section className={`flex w-full flex-col items-stretch justify-center px-3 sm:px-5 py-6 sm:py-8 border-[rgba(21,21,21,1)] border-b ${className}`}>
+        <section className={`flex w-full flex-col items-stretch justify-center px-3 sm:px-5 py-6 sm:py-8 sm:mb-8 mb-6 border-[rgba(21,21,21,1)] border-b ${className}`}>
             <div className="flex flex-row sm:flex-row items-start sm:items-center gap-3 sm:gap-5 mb-5">
                 <h2 className="text-white text-2xl sm:text-[32px] font-medium leading-none flex-1">
                     Rangliste
@@ -137,7 +137,7 @@ export const ClosingRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Benutzer</div>
                         {sortField === 'benutzer' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? '' : ''}</span>
                         )}
                     </button>
                     <div className="min-w-0 flex-1 truncate">Closing termine</div>
@@ -149,7 +149,7 @@ export const ClosingRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Abschluss</div>
                         {sortField === 'abschluss' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? ' ' : ' '}</span>
                         )}
                     </button>
                     <div className="min-w-0 flex-1 truncate">Abschluss % erreicht</div>

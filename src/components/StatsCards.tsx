@@ -72,7 +72,7 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ className = '' }) => {
   ];
 
   return (
-    <section className={`flex w-full items-center gap-1 flex-wrap max-md:max-w-full ${className}`}>
+    <section className={`flex flex-col lg:flex-row w-full items-center gap-1 flex-wrap max-md:max-w-full ${className}`}>
       {stats.map((stat, index) => (
         <MetricCard
           key={index}

@@ -54,7 +54,8 @@ export default function OptionsDropdownButton({
             {open && (
                 <div
                     ref={dropdownRef}
-                    className="absolute right-0 mt-2 w-56 bg-[#1a1a1a] border border-[#333] rounded-lg shadow-lg z-50 p-2 backdrop-blur-md min-w-[180px]"
+
+                    className="absolute right-0 mt-2 w-56 bg-[#0000001A] border border-[#FFFFFF0F] rounded-[16px] shadow-lg z-50 p-2 backdrop-blur-[27px] min-w-[180px]   "
                 >
                     <div className="flex flex-col gap-1">
                         {OPTIONS.map((opt) => (

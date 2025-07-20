@@ -125,7 +125,7 @@ export const UmsatzRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Benutzer</div>
                         {sortField === 'benutzer' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? '' : ''}</span>
                         )}
                     </button>
                     <button
@@ -134,7 +134,7 @@ export const UmsatzRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Umsatz Gesamt ↑</div>
                         {sortField === 'umsatzGesamt' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? '' : ''}</span>
                         )}
                     </button>
                     <div className="min-w-0 flex-1 truncate">Erste Rate</div>

@@ -196,7 +196,7 @@ export default function Umsatz() {
 
     return (
         <>
-            <div className="min-h-screen">
+            <div className="bg-black min-h-screen">
                 <div className="flex">
 
                     <main className="flex-1 lg:ml-0">

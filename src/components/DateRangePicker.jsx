@@ -5,7 +5,18 @@ import 'react-day-picker/dist/style.css';
 export default function DateRangePicker({ value, onChange, className = '', placeholder = 'Select date range', minYear = 2020, maxYear = 2030 }) {
     const [showPicker, setShowPicker] = useState(false);
     const [internalRange, setInternalRange] = useState(value || { from: undefined, to: undefined });
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 1024);
     const ref = useRef();
+
+    // Handle window resize
+    useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth <= 1024);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // Close picker on outside click
     useEffect(() => {
@@ -51,7 +62,7 @@ export default function DateRangePicker({ value, onChange, className = '', place
         <div className={`relative ${className}`} ref={ref}>
             <button
                 type="button"
-                className="flex items-center min-w-[240px] bg-[#FFFFFF17] border border-[#FFFFFF0F] p-[10px] leading-[100%] h-[36px] rounded-[10px] gap-[30px] justify-between"
+                className="flex items-center lg:min-w-[240px] min-w-[100%] bg-[#FFFFFF17] border border-[#FFFFFF0F] p-[10px] leading-[100%] h-[36px] rounded-[10px] gap-[30px] justify-between"
                 onClick={() => setShowPicker((v) => !v)}
             >
                 <span className='text-[14px] text-[white] font-[400]'>{displayValue}</span>
@@ -69,7 +80,7 @@ export default function DateRangePicker({ value, onChange, className = '', place
                         mode="range"
                         selected={internalRange}
                         onSelect={handleSelect}
-                        numberOfMonths={2}
+                        numberOfMonths={isDesktop ? 1 : 2}
                         fromYear={minYear}
                         toYear={maxYear}
                         classNames={{

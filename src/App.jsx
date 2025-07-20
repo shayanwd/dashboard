@@ -54,11 +54,17 @@ const Umsatz = lazy(() => import('./pages/Umsatz'));
 // };
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = (isOpen) => {
+    setIsMenuOpen(isOpen);
+  };
+
   return (
     <div className="flex min-h-screen bg-dark w-full main-wrapper">
-      <Sidebar />
+      <Sidebar isMenuOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
       <div className="flex flex-col flex-1 w-full">
-        <Header />
+        <Header isMenuOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
         <main className="flex-1 min-h-screen w-full">
           <Suspense fallback={<div className="flex items-center justify-center h-screen">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>

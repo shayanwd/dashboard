@@ -7,6 +7,7 @@ import { LeadsList } from '../components/LeadsList';
 import { SourceCharts } from '../components/SourceCharts';
 import PageHeader from '../components/PageHeader';
 import MetricCard from '../components/MetricCard';
+import LineChart from '../components/LineChart';
 
 export const Leads = () => {
     return (
@@ -22,7 +23,7 @@ export const Leads = () => {
                                 <PageHeader userName="Shayan" pageName="Leads" />
 
                             </div>
-                            <div className="space-y-5">
+                            <div className="space-y-">
                                 <StatsCards />
                                 <MonthlyOverview />
 
@@ -30,7 +31,7 @@ export const Leads = () => {
                         </div>
 
                         {/* Sidebar Metrics */}
-                        <aside className="flex-1 lg:max-w-[40%] px-3 sm:px-5 py-6 sm:py-8 space-y-4">
+                        <aside className="flex flex-col w-full lg:max-w-[40%] px-3 sm:px-5 py-6 sm:py-8 space-y-1 justify-end items-end">
                             <MetricCard
                                 title="Leads mit Termin in %"
                                 value="39.0%"
@@ -64,6 +65,7 @@ export const Leads = () => {
                     </div>
                     <LeadsList />
                     <SourceCharts />
+                    {/* <LineChart /> */}
                 </main>
             </div>
         </div>

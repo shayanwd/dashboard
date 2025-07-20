@@ -41,7 +41,7 @@ export default function CampaignDropdown({
     );
 
     return (
-        <div className={`relative min-w-[240px] ${className}`} ref={ref}>
+        <div className={`relative lg:min-w-[240px] min-w-[100%] ${className}`} ref={ref}>
             <button
                 type="button"
                 className={`btn-campaign flex items-center justify-between w-full bg-[#ffffff1c] border p-[10px] rounded-[10px] text-[14px] leading-[100%] h-[36px] text-white font-[400] focus:outline-none ${open ? 'border-[#7EBAFF]' : 'border-[#ffffff0e]'}`}

@@ -137,7 +137,7 @@ export const PreSettingRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Benutzer</div>
                         {sortField === 'benutzer' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? ' ' : ''}</span>
                         )}
                     </button>
                     <div className="min-w-0 flex-1 truncate">Anwahlversuche</div>

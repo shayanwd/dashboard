@@ -2,13 +2,15 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import HeaderComponent from './HeaderComponent';
 
 interface SidebarProps {
   className?: string;
+  isMenuOpen?: boolean;
+  onMenuToggle?: (isOpen: boolean) => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = false, onMenuToggle }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -23,14 +25,15 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
 
   const handleNavigation = (path: string) => {
     navigate(path);
-    setIsMobileMenuOpen(false);
+    onMenuToggle?.(false);
   };
 
   return (
     <>
       {/* Desktop Sidebar */}
-      <nav className={`hidden lg:block w-64 ${className}`}>
-        <div className="text-sm text-[rgba(139,139,139,1)] font-normal whitespace-nowrap leading-none pt-[29px] pb-[656px] px-[30px] border-black border-r h-full">
+      <nav className={` side-holder block lg:relative fixed top-0 left-0 lg:bg-[transparent] bg-[#000000c8] lg:backdrop-blur-none backdrop-blur-[20px] z-20 lg:w-64 w-[90%] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'} ${className}`}>
+        <div className="text-sm sticky top-0  text-[rgba(139,139,139,1)] font-normal whitespace-nowrap leading-none pt-[29px] lg:pb-[0px] pb-[10px] lg:px-[30px] px-[10px]  h-[fit-content]">
+
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/73d4596dfe606673994f99db4bdb6d8410552717?placeholderIfAbsent=true"
             alt="User Avatar"
@@ -56,14 +59,20 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
                 </div>
               </div>
             ))}
+            <div className="lg:hidden block relative z-50">
+              <HeaderComponent />
+            </div>
           </div>
         </div>
+
+
+
       </nav>
 
       {/* Mobile Sidebar Overlay */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-black bg-opacity-50">
-          <nav className="fixed left-0 top-0 h-full w-64 bg-black border-r border-[rgba(21,21,21,1)]">
+      {isMenuOpen && (
+        <div className="lg:hidden fixed inset-0 z-50 bg-black bg-opacity-50 ">
+          <nav className="fixed left-0 top-0 h-full w-[95%] bg-black border-r border-[rgba(21,21,21,1)] overflow-auto">
             <div className="text-sm text-[rgba(139,139,139,1)] font-normal leading-none p-5">
               <div className="flex justify-between items-center mb-6">
                 <img
@@ -72,7 +81,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
                   className="aspect-[2.28] object-contain w-[60px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-[80px]"
                 />
                 <button
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => onMenuToggle?.(false)}
                   className="text-white p-2"
                 >
                   <X className="w-5 h-5" />
@@ -98,6 +107,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="lg:hidden block relative z-50">
+                <HeaderComponent />
               </div>
             </div>
           </nav>

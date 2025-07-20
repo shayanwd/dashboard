@@ -4,6 +4,7 @@ import { ClosingRanglist } from '../components/ClosingRanglist';
 import MetricCard from '../components/MetricCard';
 import DoubleLineChart from '../components/DoubleLineChart';
 import DoubleLineChart2 from '../components/DoubleLineChart2';
+import DoubleBarChart from '../components/DoubleBarChart';
 
 export default function Closing() {
 
@@ -153,10 +154,10 @@ export default function Closing() {
                         <div className="border-[rgba(21,21,21,1)] border-b"></div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1">
                             <div className=" px-3 pr-4 sm:px-5 sm:pr-6 py-6 sm:py-8 border-[rgba(21,21,21,1)] border-r">
-                                <DoubleLineChart />
+                                <DoubleBarChart title="ANWAHLVERSUCHE" hasData={false} />
                             </div>
                             <div className=" px-3 sm:px-5 py-6 sm:py-8">
-                                <DoubleLineChart2 />
+                                <DoubleLineChart hasData={false} />
                             </div>
                         </div>
                         <div className="border-[rgba(21,21,21,1)] border-b mb-6"></div>

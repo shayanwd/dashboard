@@ -175,7 +175,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
   const handleNext = () => setCurrentPage((p) => Math.min(totalPages, p + 1));
 
   const Pagination = () => (
-    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 justify-center">
+    <div className="flex flex-row items-center gap-3 sm:gap-5 justify-end">
       <div className="flex items-center gap-1">
         <button onClick={handlePrev} disabled={currentPage === 1} className="flex items-center justify-center w-[30px] h-[30px] p-[7px] rounded-lg hover:bg-[rgba(255,255,255,0.05)] transition-colors disabled:opacity-40">
           <img
@@ -215,7 +215,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
 
   return (
     <section className={`flex w-full flex-col items-stretch justify-center px-3 sm:px-5 py-6 sm:py-8 border-[rgba(21,21,21,1)] border-b ${className}`}>
-      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-5 mb-5">
+      <div className="flex justify-between flex-row items-start sm:items-center gap-3 sm:gap-5 mb-5">
         <h2 className="text-white text-2xl sm:text-[32px] font-medium leading-none flex-1">
           Leads List
         </h2>
@@ -272,7 +272,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
               className="aspect-[1] object-contain w-4 shrink-0"
             />
             {sortField === 'date' && (
-              <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+              <span>{sortDirection === 'asc' ? '' : ''}</span>
             )}
           </button>
           <div className="min-w-0 flex-1 truncate">Name</div>

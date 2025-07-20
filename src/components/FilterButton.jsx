@@ -154,17 +154,16 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="absolute top-full mt-2 right-0 z-50">
+                <div className="absolute top-full mt-2 lg:left-none lg:right-[0] right-none z-50">
                     <div className="bg-[#0000001A] backdrop-blur-[64px] border border-[#FFFFFF0F] rounded-lg shadow-lg w-80 max-h-96 overflow-y-auto">
                         {/* Filter Categories */}
                         <div className="p-4 space-y-2">
                             {/* Quelle */}
-                            <div className="border-b border-[#FFFFFF0F] pb-2">
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.quelle ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('quelle')}
                                 >
-                                    <span>Quelle</span>
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.quelle ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -173,10 +172,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>Quelle</span>
                                 </div>
 
                                 {expandedCategories.quelle && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {quelleOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -187,7 +187,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`quelle-${index}`}
                                                     checked={selectedQuelle === option}
                                                     onChange={() => setSelectedQuelle(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`quelle-${index}`}
@@ -202,12 +202,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* Medium */}
-                            <div className="border-b border-[#FFFFFF0F] pb-2">
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.medium ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('medium')}
                                 >
-                                    <span>Medium</span>
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.medium ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -216,10 +215,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>Medium</span>
                                 </div>
 
                                 {expandedCategories.medium && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {mediumOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -230,7 +230,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`medium-${index}`}
                                                     checked={selectedMedium === option}
                                                     onChange={() => setSelectedMedium(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`medium-${index}`}
@@ -245,12 +245,12 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* Kampagne */}
-                            <div className="border-b border-[#FFFFFF0F] pb-2">
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.kampagne ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('kampagne')}
                                 >
-                                    <span>Kampagne</span>
+
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.kampagne ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -259,10 +259,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>Kampagne</span>
                                 </div>
 
                                 {expandedCategories.kampagne && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {campaignOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -273,7 +274,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`campaign-${index}`}
                                                     checked={selectedCampaign === option}
                                                     onChange={() => setSelectedCampaign(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`campaign-${index}`}
@@ -288,12 +289,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Source */}
-                            <div className="border-b border-[#FFFFFF0F] pb-2">
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.utmSource ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmSource')}
                                 >
-                                    <span>UTM Source</span>
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.utmSource ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -302,10 +302,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>UTM Source</span>
                                 </div>
 
                                 {expandedCategories.utmSource && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {utmSourceOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -316,7 +317,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`utmSource-${index}`}
                                                     checked={selectedUtmSource === option}
                                                     onChange={() => setSelectedUtmSource(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`utmSource-${index}`}
@@ -331,12 +332,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Medium */}
-                            <div className="border-b border-[#FFFFFF0F] pb-2">
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.utmMedium ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmMedium')}
                                 >
-                                    <span>UTM Medium</span>
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.utmMedium ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -345,10 +345,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>UTM Medium</span>
                                 </div>
 
                                 {expandedCategories.utmMedium && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {utmMediumOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -359,7 +360,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`utmMedium-${index}`}
                                                     checked={selectedUtmMedium === option}
                                                     onChange={() => setSelectedUtmMedium(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`utmMedium-${index}`}
@@ -374,12 +375,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Campaign */}
-                            <div className="border-b border-[#FFFFFF0F] pb-2">
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.utmCampaign ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmCampaign')}
                                 >
-                                    <span>UTM Campaign</span>
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.utmCampaign ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -388,10 +388,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>UTM Campaign</span>
                                 </div>
 
                                 {expandedCategories.utmCampaign && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {utmCampaignOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -402,7 +403,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`utmCampaign-${index}`}
                                                     checked={selectedUtmCampaign === option}
                                                     onChange={() => setSelectedUtmCampaign(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`utmCampaign-${index}`}
@@ -417,12 +418,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Term */}
-                            <div className="border-b border-[#FFFFFF0F] pb-2">
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.utmTerm ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmTerm')}
                                 >
-                                    <span>UTM Term</span>
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.utmTerm ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -431,10 +431,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>UTM Term</span>
                                 </div>
 
                                 {expandedCategories.utmTerm && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {utmTermOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -445,7 +446,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`utmTerm-${index}`}
                                                     checked={selectedUtmTerm === option}
                                                     onChange={() => setSelectedUtmTerm(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`utmTerm-${index}`}
@@ -460,12 +461,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                             </div>
 
                             {/* UTM Content */}
-                            <div className="pb-2">
+                            <div className={`transition-all duration-200 p-2 ${expandedCategories.utmContent ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
                                 <div
-                                    className="flex items-center justify-between cursor-pointer text-white text-sm"
+                                    className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('utmContent')}
                                 >
-                                    <span>UTM Content</span>
                                     <svg
                                         className={`w-4 h-4 transition-transform ${expandedCategories.utmContent ? 'rotate-180' : ''}`}
                                         fill="none"
@@ -474,10 +474,11 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>
+                                    <span>UTM Content</span>
                                 </div>
 
                                 {expandedCategories.utmContent && (
-                                    <div className="mt-2 space-y-1">
+                                    <div className="mt-2 space-y-1 pl-4">
                                         {utmContentOptions.map((option, index) => (
                                             <div
                                                 key={index}
@@ -488,7 +489,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                                                     id={`utmContent-${index}`}
                                                     checked={selectedUtmContent === option}
                                                     onChange={() => setSelectedUtmContent(option)}
-                                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                                    className="w-4 h-4 text-[#00BDF9] bg-gray-100 border-gray-300 rounded focus:ring-[#00BDF9]"
                                                 />
                                                 <label
                                                     htmlFor={`utmContent-${index}`}

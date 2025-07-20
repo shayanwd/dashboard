@@ -145,7 +145,7 @@ export const SettingRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Benutzer</div>
                         {sortField === 'benutzer' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? '' : ''}</span>
                         )}
                     </button>
                     <div className="min-w-0 flex-1 truncate">Setting Termine</div>
@@ -158,7 +158,7 @@ export const SettingRanglist = ({ className = '', leads }) => {
                     >
                         <div className="truncate">Closing terminiert % (erreicht)</div>
                         {sortField === 'closingTerminiertProzent' && (
-                            <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>
+                            <span>{sortDirection === 'asc' ? '' : ''}</span>
                         )}
                     </button>
                     <div className="min-w-0 flex-1 truncate">Setting zu Abschluss in %</div>
