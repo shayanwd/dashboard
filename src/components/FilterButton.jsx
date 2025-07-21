@@ -159,7 +159,7 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                         {/* Filter Categories */}
                         <div className="p-4 space-y-2">
                             {/* Quelle */}
-                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.quelle ? 'bg-[#2a2a2a] rounded-[5px]' : ''}`}>
+                            <div className={`border-b border-[#FFFFFF0F] transition-all duration-200 p-2 ${expandedCategories.quelle ? 'bg-[#ffffff12] rounded-[5px] backdrop-blur-[64px]' : ''}`}>
                                 <div
                                     className="flex items-center gap-2 cursor-pointer text-white text-sm"
                                     onClick={() => toggleCategory('quelle')}
