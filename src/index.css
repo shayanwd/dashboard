@@ -4,6 +4,7 @@
 
 :root {
   font-family: "Roboto", sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,6 +25,7 @@ body {
   min-height: 100vh;
   background: black;
   font-family: "Roboto", sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
 }
 
 
