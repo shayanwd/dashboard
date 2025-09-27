@@ -34,20 +34,24 @@ const HeaderComponent = () => {
     return (
         <>
 
-            <div className="grid grid-cols-2 lg:flex lg:flex-row gap-2 z-60 relative w-full lg:mb-0 mb-2 lg:mt-0 mt-4">
+            <div className="grid grid-cols-2 flex-row-reverse lg:flex lg:flex-row gap-2 z-60 relative w-full lg:mb-0 mb-2 lg:mt-0 mt-4">
                 <DateRangePicker value={range} onChange={setRange} />
                 <CampaignDropdown
                     options={campaignOptions}
                     value={campaign}
                     onChange={setCampaign}
                 />
+                <div className="lg:hidden block"></div>
                 <CampaignDropdown
                     options={campaignOptions2}
                     value={campaign2}
                     onChange={setCampaign2}
                 />
             </div>
-            <FilterButton />
+            <div className="lg:block grid grid-cols-2 gap-2 lg:mt-0 mt-[-43px]">
+
+                <FilterButton />
+            </div>
         </>
     )
 }

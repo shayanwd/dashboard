@@ -52,7 +52,11 @@ export const Header: React.FC<HeaderProps> = ({ className = '', onMenuToggle, is
         <div className={`w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></div>
         <div className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></div>
       </button>
+      <div className="lg:flex items-center justify-between w-full hidden">
 
+
+        <HeaderComponent />
+      </div>
     </header>
   );
 };
