@@ -16,11 +16,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
 
   const menuItems = [
     { icon: "/src/assets/search.png", label: "Leads", path: "/" },
-    { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/0ee644caaafd5ea1799ada8e3afc0ec73ae24bcb?placeholderIfAbsent=true", label: "Pre-Setting", path: "/pre-setting" },
-    { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/deaec98764b663b8a774553f08c304d328680b85?placeholderIfAbsent=true", label: "Aktivität", path: "/aktivitaet" },
-    { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/9f58e7a913a04dd4b54750b6eb3fbbb7a683f4ee?placeholderIfAbsent=true", label: "Setting", path: "/setting" },
-    { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/0d771b4bad6dd3ebfbec9c4cd485a603cc02bfd6?placeholderIfAbsent=true", label: "Closing", path: "/closing" },
-    { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/bb3dca346f05e54307c95563bca180a82f682809?placeholderIfAbsent=true", label: "Umsatz", path: "/umsatz" },
+    { icon: "/src/assets/setting.svg", label: "Pre-Setting", path: "/pre-setting" },
+    { icon: "/src/assets/filter.svg", label: "Aktivität", path: "/aktivitaet" },
+    { icon: "/src/assets/gear.svg", label: "Setting", path: "/setting" },
+    { icon: "/src/assets/checked.svg", label: "Closing", path: "/closing" },
+    { icon: "/src/assets/candles.svg", label: "Umsatz", path: "/umsatz" },
   ];
 
   const handleNavigation = (path: string) => {
