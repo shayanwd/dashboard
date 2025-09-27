@@ -35,7 +35,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
         <div className="text-sm sticky top-0  text-[rgba(139,139,139,1)] font-normal whitespace-nowrap leading-none pt-[29px] lg:pb-[0px] pb-[10px] lg:px-[30px] px-[10px]  h-[fit-content]">
 
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/73d4596dfe606673994f99db4bdb6d8410552717?placeholderIfAbsent=true"
+            src="/src/assets/logg.svg"
             alt="User Avatar"
             className="aspect-[2.28] object-contain w-[73px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-[80px]"
           />
@@ -76,7 +76,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
             <div className="text-sm text-[rgba(139,139,139,1)] font-normal leading-none p-5">
               <div className="flex justify-between items-center mb-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/73d4596dfe606673994f99db4bdb6d8410552717?placeholderIfAbsent=true"
+                  src="/src/assets/logg.svg"
                   alt="User Avatar"
                   className="aspect-[2.28] object-contain w-[60px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-[80px]"
                 />

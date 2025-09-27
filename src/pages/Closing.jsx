@@ -123,28 +123,28 @@ export default function Closing() {
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
                                 <MetricCard
                                     title="CLOSING DURCHGEFÜHRT"
                                     value="1.0%"
                                     percentage="2.5%"
                                     isPositive={false}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
                                 <MetricCard
                                     title="ERSCHEINUNGSQUOTE %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
                                 <MetricCard
                                     title="NO SHOW QUOTE %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
 
                             </div>
@@ -167,28 +167,28 @@ export default function Closing() {
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
                             <MetricCard
                                 title="CLOSING DURCHGEFÜHRT"
                                 value="1.0%"
                                 percentage="2.5%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
                             <MetricCard
                                 title="ERSCHEINUNGSQUOTE %"
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
                             <MetricCard
                                 title="NO SHOW QUOTE %"
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
 
                         </div>
@@ -198,21 +198,21 @@ export default function Closing() {
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
                             <MetricCard
                                 title="CLOSING DURCHGEFÜHRT"
                                 value="1.0%"
                                 percentage="2.5%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
                             <MetricCard
                                 title="ERSCHEINUNGSQUOTE %"
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
 
 

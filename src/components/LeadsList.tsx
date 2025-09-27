@@ -179,7 +179,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
       <div className="flex items-center gap-1">
         <button onClick={handlePrev} disabled={currentPage === 1} className="flex items-center justify-center w-[30px] h-[30px] p-[7px] rounded-lg hover:bg-[rgba(255,255,255,0.05)] transition-colors disabled:opacity-40">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/12d5836f7bd8e79cc1cab294437637813b1bbf06?placeholderIfAbsent=true"
+            src="/src/assets/back.svg"
             alt="Previous"
             className="aspect-[1] object-contain w-4"
           />
@@ -200,7 +200,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
         </div>
         <button onClick={handleNext} disabled={currentPage === totalPages} className="bg-[rgba(230,243,255,0.14)] flex items-center justify-center w-[30px] h-[30px] rounded-[10px] hover:bg-[rgba(230,243,255,0.2)] transition-colors disabled:opacity-40">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5720ff0c139ee4cc3f304a98baaafe4ffde4a238?placeholderIfAbsent=true"
+            src="/src/assets/next.svg"
             alt="Next"
             className="aspect-[1] object-contain w-4"
           />
@@ -267,7 +267,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
           >
             <div className="truncate">Datum</div>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a3bfbc83db9586533dc2f0faa7cac8cdcd0689f?placeholderIfAbsent=true"
+              src="/src/assets/sort.svg"
               alt="Sort"
               className="aspect-[1] object-contain w-4 shrink-0"
             />

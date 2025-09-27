@@ -147,13 +147,13 @@ export default function Setting() {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1">
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1">
-                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true" />
-                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true" />
-                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true" />
-                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true" />
+                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon="/src/assets/cdown.svg" />
+                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
+                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
+                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
 
-                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true" />
-                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true" />
+                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon="/src/assets/cdown.svg" />
+                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
 
                                 </div>
 
@@ -162,9 +162,9 @@ export default function Setting() {
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 mt-1">
-                                <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true" />
-                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true" />
-                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="https://cdn.builder.io/api/v1/image/assets/TEMP/732177d1a9221220b4e305e1a0357acdae8b2161?placeholderIfAbsent=true" />
+                                <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
+                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
+                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
 
                             </div>
 

@@ -37,21 +37,21 @@ export const Leads = () => {
                                 value="39.0%"
                                 percentage="203.7%"
                                 isPositive={false}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                icon="/src/assets/cdown.svg"
                             />
                             <MetricCard
                                 title="Leads zu Abschluss"
                                 value="16"
                                 percentage="23.5%"
                                 isPositive={true}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/9e8a4b5a9f9e72b59a48273b9b94af7d7700c435?placeholderIfAbsent=true"
+                                icon="/src/assets/cup.svg"
                             />
                             <MetricCard
                                 title="Leads zu Abschluss in %"
                                 value="6.2%"
                                 percentage="23.5%"
                                 isPositive={true}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/a81aa47759294ca9a922db3a0af1bab4aae35902?placeholderIfAbsent=true"
+                                icon="/src/assets/cup.svg"
 
                             />
                             <MetricCard
@@ -59,7 +59,7 @@ export const Leads = () => {
                                 value="27.5"
                                 percentage="23.5%"
                                 isPositive={true}
-                                icon="https://cdn.builder.io/api/v1/image/assets/TEMP/9e8a4b5a9f9e72b59a48273b9b94af7d7700c435?placeholderIfAbsent=true"
+                                icon="/src/assets/cup.svg"
                             />
                         </aside>
                     </div>

@@ -210,28 +210,28 @@ export default function Umsatz() {
                                     value="125,430"
                                     percentage="12.3%"
                                     isPositive={true}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
                                 <MetricCard
                                     title="CASHFLOW ERSTE RATE"
                                     value="45,280"
                                     percentage="8.7%"
                                     isPositive={true}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
                                 <MetricCard
                                     title="DURCHSCHNITTLICHER CASHFLOW"
                                     value="3,240"
                                     percentage="15.2%"
                                     isPositive={true}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
                                 <MetricCard
                                     title="ERSTE RATE IN %"
                                     value="36.1%"
                                     percentage="5.4%"
                                     isPositive={true}
-                                    icon="https://cdn.builder.io/api/v1/image/assets/TEMP/11b5dec391f5f99bd322cd60ae81b2459bc5a260?placeholderIfAbsent=true"
+                                    icon="/src/assets/cdown.svg"
                                 />
 
                             </div>

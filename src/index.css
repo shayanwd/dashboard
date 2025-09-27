@@ -107,6 +107,10 @@ body {
   color: #8B8B8B;
 }
 
+img[alt="Aktivität"] {
+  filter: brightness(0.5);
+}
+
 nav .active img.object-contain {
   filter: brightness(0) invert(1);
 }

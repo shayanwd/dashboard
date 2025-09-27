@@ -45,7 +45,7 @@ export const MonthlyOverview: React.FC<MonthlyOverviewProps> = ({ className = ''
             onClick={() => setShowCalendar(!showCalendar)}
           >
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/65127d4016735eb9ffbc8ec024ba3739ff168678?placeholderIfAbsent=true"
+              src="/src/assets/cal.svg"
               alt="Calendar"
               className="aspect-[1] object-contain w-3 lg:w-4 self-stretch shrink-0 my-auto"
             />
@@ -53,7 +53,7 @@ export const MonthlyOverview: React.FC<MonthlyOverviewProps> = ({ className = ''
               {selectedMonth}
             </div>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/3ac093d29b2f622c5d05ad5c42ba377f9131daec?placeholderIfAbsent=true"
+              src="/src/assets/dd.svg"
               alt="Dropdown"
               className={`aspect-[1] object-contain w-3 lg:w-4 self-stretch shrink-0 my-auto transition-transform duration-200 ${showCalendar ? 'rotate-180' : ''}`}
             />
