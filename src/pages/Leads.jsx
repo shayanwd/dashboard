@@ -8,6 +8,8 @@ import { SourceCharts } from '../components/SourceCharts';
 import PageHeader from '../components/PageHeader';
 import MetricCard from '../components/MetricCard';
 import LineChart from '../components/LineChart';
+import cupIco from '/src/assets/cup.svg';
+import cdownIco from '/src/assets/cdown.svg';
 
 export const Leads = () => {
     return (
@@ -37,21 +39,21 @@ export const Leads = () => {
                                 value="39.0%"
                                 percentage="203.7%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
                             <MetricCard
                                 title="Leads zu Abschluss"
                                 value="16"
                                 percentage="23.5%"
                                 isPositive={true}
-                                icon="/src/assets/cup.svg"
+                                icon={cupIco}
                             />
                             <MetricCard
                                 title="Leads zu Abschluss in %"
                                 value="6.2%"
                                 percentage="23.5%"
                                 isPositive={true}
-                                icon="/src/assets/cup.svg"
+                                icon={cupIco}
 
                             />
                             <MetricCard
@@ -59,7 +61,7 @@ export const Leads = () => {
                                 value="27.5"
                                 percentage="23.5%"
                                 isPositive={true}
-                                icon="/src/assets/cup.svg"
+                                icon={cupIco}
                             />
                         </aside>
                     </div>

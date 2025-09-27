@@ -1,5 +1,7 @@
 import React from 'react';
 import MetricCard from './MetricCard';
+import cupIco from '/src/assets/cup.svg';
+import cdownIco from '/src/assets/cdown.svg';
 
 interface StatCardProps {
   title: string;
@@ -11,7 +13,7 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ title, value, percentage, isPositive, icon }) => {
   return (
-    <div className="bg-[rgba(255,255,255,0.09)] border self-stretch flex min-h-[126px] flex-col overflow-hidden items-stretch justify-center flex-1 shrink basis-[0%] my-auto px-5 py-[21px] rounded-[10px] border-[rgba(255,255,255,0.06)] border-solid">
+    <div className="stc bg-[rgba(255,255,255,0.09)] border self-stretch flex min-h-[126px] flex-col overflow-hidden items-stretch justify-center flex-1 shrink basis-[0%] my-auto px-5 py-[21px] rounded-[10px] border-[rgba(255,255,255,0.06)] border-solid">
       <div className="gap-2.5 text-base text-white font-semibold uppercase leading-none">
         {title}
       </div>
@@ -53,21 +55,21 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ className = '' }) => {
       value: "256",
       percentage: "10.5%",
       isPositive: false,
-      icon: "/src/assets/cdown.svg"
+      icon: `${cdownIco}`
     },
     {
       title: "Leads mit Termin",
       value: "164",
       percentage: "203.7%",
       isPositive: true,
-      icon: "/src/assets/cup.svg"
+      icon: `${cupIco}`
     },
     {
       title: "Leads insgesamt",
       value: "420",
       percentage: "23.5%",
       isPositive: true,
-      icon: "/src/assets/cup.svg"
+      icon: `${cupIco}`
     }
   ];
 

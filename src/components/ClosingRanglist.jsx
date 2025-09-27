@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import nextico from '/src/assets/next.svg';
+import backico from '/src/assets/back.svg';
 
 const PAGE_SIZE = 10;
 
@@ -42,7 +44,7 @@ export const ClosingRanglist = ({ className = '', leads }) => {
                 {sortedLeads.length > 0 && (
                     <button onClick={handlePrev} disabled={currentPage === 1} className="flex items-center justify-center w-[30px] h-[30px] p-[7px] rounded-lg hover:bg-[rgba(255,255,255,0.05)] transition-colors disabled:opacity-40">
                         <img
-                            src="/src/assets/back.svg"
+                            src={backico}
                             alt="Previous"
                             className="aspect-[1] object-contain w-4"
                         />
@@ -65,7 +67,7 @@ export const ClosingRanglist = ({ className = '', leads }) => {
                 {sortedLeads.length > 0 && (
                     <button onClick={handleNext} disabled={currentPage === totalPages} className="bg-[rgba(230,243,255,0.14)] flex items-center justify-center w-[30px] h-[30px] rounded-[10px] hover:bg-[rgba(230,243,255,0.2)] transition-colors disabled:opacity-40">
                         <img
-                            src="/src/assets/next.svg"
+                            src={nextico}
                             alt="Next"
                             className="aspect-[1] object-contain w-4"
                         />

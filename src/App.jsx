@@ -42,12 +42,7 @@ const HeaderComponent = lazy(() => import('./components/HeaderComponent'));
 //         <div className="text-white text-sm font-normal leading-none">
 //           Filters
 //         </div>
-//         <div className="bg-[rgba(230,243,255,0.14)] flex items-center justify-center w-7 h-7 px-1.5 rounded-[7px]">
-//           <img
-//             src="https://cdn.builder.io/api/v1/image/assets/TEMP/7afa7f224bb8f246cefb6d992cb23d64c11e39b5?placeholderIfAbsent=true"
-//             alt="Filter"
-//             className="aspect-[1] object-contain w-4"
-//           />
+//         <div className="bg-[rgba(230,243,255,0.14)] flex items-center justify-center w-7 h-7 px-1.5 rounded-[7px]"> 
 //         </div>
 //       </div>
 //     </header>

@@ -5,6 +5,8 @@ import MetricCard from '../components/MetricCard';
 import DoubleLineChart from '../components/DoubleLineChart';
 import DoubleLineChart2 from '../components/DoubleLineChart2';
 import DoubleBarChart from '../components/DoubleBarChart';
+import cupIco from '/src/assets/cup.svg';
+import cdownIco from '/src/assets/cdown.svg';
 
 export default function Closing() {
 
@@ -123,28 +125,28 @@ export default function Closing() {
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="CLOSING DURCHGEFÜHRT"
                                     value="1.0%"
                                     percentage="2.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="ERSCHEINUNGSQUOTE %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="NO SHOW QUOTE %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
 
                             </div>
@@ -167,28 +169,28 @@ export default function Closing() {
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
                             <MetricCard
                                 title="CLOSING DURCHGEFÜHRT"
                                 value="1.0%"
                                 percentage="2.5%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
                             <MetricCard
                                 title="ERSCHEINUNGSQUOTE %"
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
                             <MetricCard
                                 title="NO SHOW QUOTE %"
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
 
                         </div>
@@ -198,21 +200,21 @@ export default function Closing() {
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
                             <MetricCard
                                 title="CLOSING DURCHGEFÜHRT"
                                 value="1.0%"
                                 percentage="2.5%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
                             <MetricCard
                                 title="ERSCHEINUNGSQUOTE %"
                                 value="39.0%"
                                 percentage="23.5%"
                                 isPositive={false}
-                                icon="/src/assets/cdown.svg"
+                                icon={cdownIco}
                             />
 
 

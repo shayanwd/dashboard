@@ -5,6 +5,8 @@ import ConversationTimeChart from '../components/ConversationTimeChart';
 import ActiveWorkingChart from '../components/ActiveWorkingChart';
 import { PreSettingRanglist } from '../components/PreSettingRanglist';
 import MetricCard from '../components/MetricCard';
+import cupIco from '/src/assets/cup.svg';
+import cdownIco from '/src/assets/cdown.svg';
 
 export default function PreSetting() {
 
@@ -124,63 +126,63 @@ export default function PreSetting() {
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={true}
-                                    icon="/src/assets/cup.svg"
+                                    icon={cupIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="1.0%"
                                     percentage="2.5%"
                                     isPositive={true}
-                                    icon="/src/assets/cup.svg"
+                                    icon={cupIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={false}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cdownIco}
                                 />
                                 <MetricCard
                                     title="Leads mit Termin in %"
                                     value="39.0%"
                                     percentage="23.5%"
                                     isPositive={true}
-                                    icon="/src/assets/cup.svg"
+                                    icon={cupIco}
                                 />
                             </div>
 

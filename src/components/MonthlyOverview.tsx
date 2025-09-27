@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
+import calIco from '/src/assets/cal.svg';
+import ddIco from '/src/assets/dd.svg';
 
 interface MonthlyOverviewProps {
   className?: string;
@@ -45,7 +47,7 @@ export const MonthlyOverview: React.FC<MonthlyOverviewProps> = ({ className = ''
             onClick={() => setShowCalendar(!showCalendar)}
           >
             <img
-              src="/src/assets/cal.svg"
+              src={calIco}
               alt="Calendar"
               className="aspect-[1] object-contain w-3 lg:w-4 self-stretch shrink-0 my-auto"
             />
@@ -53,7 +55,7 @@ export const MonthlyOverview: React.FC<MonthlyOverviewProps> = ({ className = ''
               {selectedMonth}
             </div>
             <img
-              src="/src/assets/dd.svg"
+              src={ddIco}
               alt="Dropdown"
               className={`aspect-[1] object-contain w-3 lg:w-4 self-stretch shrink-0 my-auto transition-transform duration-200 ${showCalendar ? 'rotate-180' : ''}`}
             />

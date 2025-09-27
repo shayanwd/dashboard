@@ -5,6 +5,8 @@ import { SalesRanglist } from '../components/SalesRanglist';
 import MetricCard from '../components/MetricCard';
 import DoubleLineChart from '../components/DoubleLineChart';
 import DoubleLineChart2 from '../components/DoubleLineChart2';
+import cupIco from '/src/assets/cup.svg';
+import cdownIco from '/src/assets/cdown.svg';
 
 export default function Umsatz() {
 
@@ -210,28 +212,28 @@ export default function Umsatz() {
                                     value="125,430"
                                     percentage="12.3%"
                                     isPositive={true}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cupIco}
                                 />
                                 <MetricCard
                                     title="CASHFLOW ERSTE RATE"
                                     value="45,280"
                                     percentage="8.7%"
                                     isPositive={true}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cupIco}
                                 />
                                 <MetricCard
                                     title="DURCHSCHNITTLICHER CASHFLOW"
                                     value="3,240"
                                     percentage="15.2%"
                                     isPositive={true}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cupIco}
                                 />
                                 <MetricCard
                                     title="ERSTE RATE IN %"
                                     value="36.1%"
                                     percentage="5.4%"
                                     isPositive={true}
-                                    icon="/src/assets/cdown.svg"
+                                    icon={cupIco}
                                 />
 
                             </div>

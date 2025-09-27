@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import backIco from '/src/assets/back.svg';
+import nextIco from '/src/assets/next.svg';
+import sortIco from '/src/assets/sort.svg';
 
 interface Lead {
   date: string;
@@ -179,7 +182,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
       <div className="flex items-center gap-1">
         <button onClick={handlePrev} disabled={currentPage === 1} className="flex items-center justify-center w-[30px] h-[30px] p-[7px] rounded-lg hover:bg-[rgba(255,255,255,0.05)] transition-colors disabled:opacity-40">
           <img
-            src="/src/assets/back.svg"
+            src={backIco}
             alt="Previous"
             className="aspect-[1] object-contain w-4"
           />
@@ -200,7 +203,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
         </div>
         <button onClick={handleNext} disabled={currentPage === totalPages} className="bg-[rgba(230,243,255,0.14)] flex items-center justify-center w-[30px] h-[30px] rounded-[10px] hover:bg-[rgba(230,243,255,0.2)] transition-colors disabled:opacity-40">
           <img
-            src="/src/assets/next.svg"
+            src={nextIco}
             alt="Next"
             className="aspect-[1] object-contain w-4"
           />
@@ -267,7 +270,7 @@ export const LeadsList: React.FC<LeadsListProps> = ({ className = '' }) => {
           >
             <div className="truncate">Datum</div>
             <img
-              src="/src/assets/sort.svg"
+              src={sortIco}
               alt="Sort"
               className="aspect-[1] object-contain w-4 shrink-0"
             />

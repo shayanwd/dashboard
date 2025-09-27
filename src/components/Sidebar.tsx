@@ -3,6 +3,13 @@ import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import HeaderComponent from './HeaderComponent';
+import searchico from '/src/assets/search.png';
+import settingico from '/src/assets/setting.svg';
+import filterico from '/src/assets/filter.svg';
+import gearico from '/src/assets/gear.svg';
+import checkedico from '/src/assets/checked.svg';
+import candlesico from '/src/assets/candles.svg';
+import logg from '/src/assets/logg.svg';
 
 interface SidebarProps {
   className?: string;
@@ -15,12 +22,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
   const location = useLocation();
 
   const menuItems = [
-    { icon: "/src/assets/search.png", label: "Leads", path: "/" },
-    { icon: "/src/assets/setting.svg", label: "Pre-Setting", path: "/pre-setting" },
-    { icon: "/src/assets/filter.svg", label: "Aktivität", path: "/aktivitaet" },
-    { icon: "/src/assets/gear.svg", label: "Setting", path: "/setting" },
-    { icon: "/src/assets/checked.svg", label: "Closing", path: "/closing" },
-    { icon: "/src/assets/candles.svg", label: "Umsatz", path: "/umsatz" },
+    { icon: `${searchico}`, label: "Leads", path: "/" },
+    { icon: `${settingico}`, label: "Pre-Setting", path: "/pre-setting" },
+    { icon: `${filterico}`, label: "Aktivität", path: "/aktivitaet" },
+    { icon: `${gearico}`, label: "Setting", path: "/setting" },
+    { icon: `${checkedico}`, label: "Closing", path: "/closing" },
+    { icon: `${candlesico}`, label: "Umsatz", path: "/umsatz" },
   ];
 
   const handleNavigation = (path: string) => {
@@ -35,7 +42,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
         <div className="text-sm sticky top-0  text-[rgba(139,139,139,1)] font-normal whitespace-nowrap leading-none pt-[29px] lg:pb-[0px] pb-[10px] lg:px-[30px] px-[10px]  h-[fit-content]">
 
           <img
-            src="/src/assets/logg.svg"
+            src={logg}
             alt="User Avatar"
             className="aspect-[2.28] object-contain w-[73px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-[80px]"
           />
@@ -76,7 +83,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
             <div className="text-sm text-[rgba(139,139,139,1)] font-normal leading-none p-5">
               <div className="flex justify-between items-center mb-6">
                 <img
-                  src="/src/assets/logg.svg"
+                  src={logg}
                   alt="User Avatar"
                   className="aspect-[2.28] object-contain w-[60px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-[80px]"
                 />

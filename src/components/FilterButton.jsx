@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import filtericon from '/src/assets/filter.svg';
 
 const FilterButton = React.forwardRef(function FilterButton({ className = '', onClick }, ref) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -144,11 +145,12 @@ const FilterButton = React.forwardRef(function FilterButton({ className = '', on
                     Filters
                 </div>
                 <div className="bg-[rgba(230,243,255,0.14)] flex items-center justify-center w-7 h-7 px-1.5 rounded-[7px]">
-                    <img
-                        src="/src/assets/filter.svg"
+                    {/* <img
+                        src={filtericon}
                         alt="Filter"
                         className="aspect-[1] object-contain w-4"
-                    />
+                    /> */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="aspect-[1] object-contain w-4"><path d="M2.66663 14V9.33333" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.66663 6.66667V2" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 14V8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 5.33333V2" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.3334 14V10.6667" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.3334 8V2" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M0.666626 9.33333H4.66663" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 5.33333H10" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.3334 10.6667H15.3334" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 </div>
             </div>
 

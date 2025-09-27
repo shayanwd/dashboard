@@ -8,6 +8,8 @@ import MetricCard from '../components/MetricCard';
 import DoubleBarChart from '../components/DoubleBarChart';
 import DoubleLineChart from '../components/DoubleLineChart';
 import DoubleLineChart2 from '../components/DoubleLineChart2';
+import cupIco from '/src/assets/cup.svg';
+import cdownIco from '/src/assets/cdown.svg';
 
 
 export default function Setting() {
@@ -147,13 +149,13 @@ export default function Setting() {
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1">
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1">
-                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon="/src/assets/cdown.svg" />
-                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
-                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
-                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
+                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon={cdownIco} />
+                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon={cupIco} />
+                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon={cupIco} />
+                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon={cupIco} />
 
-                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon="/src/assets/cdown.svg" />
-                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
+                                    <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={false} icon={cdownIco} />
+                                    <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon={cupIco} />
 
                                 </div>
 
@@ -162,9 +164,9 @@ export default function Setting() {
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 mt-1">
-                                <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
-                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
-                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon="/src/assets/cup.svg" />
+                                <MetricCard title="CLOSING TERMINIERT % (ERREICHT)" value="420" percentage="+23.5%" isPositive={true} icon={cupIco} />
+                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon={cupIco} />
+                                <MetricCard title="SETTING ZU ABSCHLUSS IN %" value="420" percentage="+23.5%" isPositive={true} icon={cupIco} />
 
                             </div>
 
