@@ -123,7 +123,7 @@ nav.hidden::before {
   max-height: 1197px;
   width: auto;
   aspect-ratio: 668/1197;
-  background-image: url(../sidebar-blur_converted.webp);
+  background-image: url(assets/sidebar-blur_converted.webp);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -147,7 +147,7 @@ nav.hidden::before {
   margin: auto;
   width: 90%;
   aspect-ratio: 1134/737;
-  background-image: url(blur-top-center.webp);
+  background-image: url(assets/blur-top-center.webp);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -165,7 +165,7 @@ nav.hidden::before {
   margin: auto;
   width: auto;
   aspect-ratio: 669 / 1205;
-  background-image: url(blur-mid-right_converted.webp);
+  background-image: url(assets/blur-mid-right_converted.webp);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -190,7 +190,7 @@ nav.hidden::before {
   width: 50%;
   max-width: 341px;
   aspect-ratio: 341/167;
-  background: url(chipku-bottom-blur.webp);
+  background: url(assets/chipku-bottom-blur.webp);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: contain;
@@ -215,7 +215,7 @@ nav.hidden::before {
   width: 70%;
   max-width: 493px;
   aspect-ratio: 493 / 375;
-  background: url(table-blur_converted.webp);
+  background: url(assets/table-blur_converted.webp);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: contain;
@@ -237,7 +237,7 @@ nav.hidden::before {
   width: 50%;
   max-width: 669px;
   aspect-ratio: 669 / 702;
-  background: url(quelle-blur_converted.webp);
+  background: url(assets/quelle-blur_converted.webp);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
@@ -260,7 +260,7 @@ nav.hidden::before {
   width: 50%;
   max-width: 669px;
   aspect-ratio: 669 / 1031;
-  background: url(table-topright-blur_converted.webp);
+  background: url(assets/table-topright-blur_converted.webp);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
