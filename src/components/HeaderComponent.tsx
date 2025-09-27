@@ -34,7 +34,7 @@ const HeaderComponent = () => {
     return (
         <>
 
-            <div className="flex flex-col lg:flex-row gap-2 z-60 relative  w-full lg:mb-0 mb-2 lg:mt-0 mt-4 ">
+            <div className="grid grid-cols-2 lg:flex lg:flex-row gap-2 z-60 relative w-full lg:mb-0 mb-2 lg:mt-0 mt-4">
                 <DateRangePicker value={range} onChange={setRange} />
                 <CampaignDropdown
                     options={campaignOptions}

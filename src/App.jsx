@@ -14,6 +14,7 @@ const Aktivitaet = lazy(() => import('./pages/Aktivitaet'));
 const Setting = lazy(() => import('./pages/Setting'));
 const Closing = lazy(() => import('./pages/Closing'));
 const Umsatz = lazy(() => import('./pages/Umsatz'));
+const HeaderComponent = lazy(() => import('./components/HeaderComponent'));
 
 
 
@@ -65,6 +66,9 @@ function App() {
       <Sidebar isMenuOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
       <div className="flex flex-col flex-1 w-full">
         <Header isMenuOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
+        <div className="lg:hidden block relative   px-3 sm:px-5">
+          <HeaderComponent />
+        </div>
         <main className="flex-1 min-h-screen w-full">
           <Suspense fallback={<div className="flex items-center justify-center h-screen">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>

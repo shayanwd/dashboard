@@ -15,7 +15,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
   const location = useLocation();
 
   const menuItems = [
-    { icon: "../search.png", label: "Leads", path: "/" },
+    { icon: "/src/assets/search.png", label: "Leads", path: "/" },
     { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/0ee644caaafd5ea1799ada8e3afc0ec73ae24bcb?placeholderIfAbsent=true", label: "Pre-Setting", path: "/pre-setting" },
     { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/deaec98764b663b8a774553f08c304d328680b85?placeholderIfAbsent=true", label: "Aktivität", path: "/aktivitaet" },
     { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/9f58e7a913a04dd4b54750b6eb3fbbb7a683f4ee?placeholderIfAbsent=true", label: "Setting", path: "/setting" },
@@ -108,9 +108,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '', isMenuOpen = f
                   </div>
                 ))}
               </div>
-              <div className="lg:hidden block relative z-50">
-                <HeaderComponent />
-              </div>
+
             </div>
           </nav>
         </div>
