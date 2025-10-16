@@ -14,6 +14,7 @@ const Aktivitaet = lazy(() => import('./pages/Aktivitaet'));
 const Setting = lazy(() => import('./pages/Setting'));
 const Closing = lazy(() => import('./pages/Closing'));
 const Umsatz = lazy(() => import('./pages/Umsatz'));
+const CsoBoard = lazy(() => import('./pages/CsoBoard'));
 const HeaderComponent = lazy(() => import('./components/HeaderComponent'));
 
 
@@ -76,6 +77,7 @@ function App() {
               <Route path="/closing" element={<Closing />} />
               <Route path="/umsatz" element={<Umsatz />} />
               <Route path="*" element={<Leads />} />
+              <Route path="/cso-board" element={<CsoBoard />} />
             </Routes>
           </Suspense>
         </main>
