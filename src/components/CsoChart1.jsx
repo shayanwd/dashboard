@@ -32,7 +32,12 @@ const BASE_OPTIONS = {
             borderRadius: 0,
             borderRadiusApplication: 'end',
             borderRadiusWhenStacked: 'last',
-            columnWidth: '70%',
+            columnWidth: '58%',
+            // ✅ Adds the gray background behind bars
+            colors: {
+                backgroundBarColors: ['#FFFFFF17'], // subtle gray tone
+                backgroundBarOpacity: 1,
+            },
             dataLabels: { position: 'top' },
         },
     },
