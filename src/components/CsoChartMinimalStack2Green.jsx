@@ -11,8 +11,8 @@ const CATEGORIES_15 = ['27', '29', '1', '3', '5', '7', '9', '11', '13', '15', '1
 
 // Default data tuned to the screenshot proportions
 const DEFAULT_SERIES = [
-    { name: 'Light', data: [16, 10, 7, 9, 8, 18, 16, 4, 13, 10, 5, 7, 14, 9, 12] }, // light green (bottom)
-    { name: 'Dark', data: [8, 6, 5, 3, 4, 6, 10, 3, 7, 8, 3, 10, 12, 11, 10] }, // dark green (top)
+    { name: 'Setting Termine', data: [16, 10, 7, 9, 8, 18, 16, 4, 13, 10, 5, 7, 14, 9, 12] }, // light green (bottom)
+    { name: 'Closing Termine', data: [8, 6, 5, 3, 4, 6, 10, 3, 7, 8, 3, 10, 12, 11, 10] }, // dark green (top)
 ];
 
 const BASE_OPTIONS = {
@@ -31,6 +31,11 @@ const BASE_OPTIONS = {
             borderRadiusApplication: 'end',
             borderRadiusWhenStacked: 'last',
             columnWidth: '58%',
+            // ✅ Adds the gray background behind bars
+            colors: {
+                backgroundBarColors: ['#FFFFFF17'], // subtle gray tone
+                backgroundBarOpacity: 1,
+            },
         },
     },
     dataLabels: { enabled: false },
