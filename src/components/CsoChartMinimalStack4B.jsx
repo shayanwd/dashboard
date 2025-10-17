@@ -13,13 +13,11 @@ const CATEGORIES_15 = ['27', '29', '1', '3', '5', '7', '9', '11', '13', '15', '1
 // Defaults crafted to visually match the provided screenshot
 const DEFAULT_SERIES = [
     // Green (bottom)
-    { name: 'G', data: [14, 10, 8, 6, 16, 12, 10, 8, 12, 10, 8, 10, 12, 8, 12] },
+    { name: 'durchschnittlicher Kundenwert', data: [14, 10, 8, 6, 16, 12, 10, 8, 12, 10, 8, 10, 12, 8, 12] },
     // Orange (middle 1)
-    { name: 'O', data: [8, 7, 6, 4, 7, 6, 5, 4, 8, 7, 5, 8, 10, 7, 8] },
+    { name: 'Kosten Pro Closing Termin', data: [8, 7, 6, 4, 7, 6, 5, 4, 8, 7, 5, 8, 10, 7, 8] },
     // Red (middle 2 – prominent)
-    { name: 'R', data: [12, 10, 9, 6, 10, 12, 12, 5, 14, 12, 11, 14, 16, 12, 12] },
-    // Dark gray (top – small cap)
-    { name: 'D', data: [4, 5, 9, 12, 4, 6, 10, 13, 6, 6, 8, 5, 3, 6, 6] },
+    { name: ' Kosten Pro Kunde', data: [12, 10, 9, 6, 10, 12, 12, 5, 14, 12, 11, 14, 16, 12, 12] },
 ];
 
 const BASE_OPTIONS = {
@@ -38,6 +36,11 @@ const BASE_OPTIONS = {
             borderRadiusApplication: 'end',
             borderRadiusWhenStacked: 'last',
             columnWidth: '58%',
+            // ✅ Adds the gray background behind bars
+            colors: {
+                backgroundBarColors: ['#FFFFFF17'], // subtle gray tone
+                backgroundBarOpacity: 1,
+            },
         },
     },
     dataLabels: { enabled: false },

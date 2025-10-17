@@ -12,20 +12,25 @@ import Chart from 'react-apexcharts';
 const CATEGORIES_15 = ['27', '29', '1', '3', '5', '7', '9', '11', '13', '15', '17', '19', '21', '23', '25'];
 
 // Default data roughly shaped like the mock for quick drop‑in
+// --- only this block changed ---
 const DEFAULT_SERIES = [
     {
-        name: 'Blue',
-        data: [280, 160, 260, 300, 320, 230, 360, 340, 220, 300, 330, 290, 250, 310, 270],
+        // Blue (steady-mid, gentle wiggles)
+        name: 'Abschlussquote',
+        data: [300, 210, 280, 330, 320, 260, 350, 300, 340, 325, 290, 265, 305, 335, 295],
     },
     {
-        name: 'Neon',
-        data: [220, 240, 560, 500, 260, 420, 700, 360, 240, 600, 300, 640, 280, 720, 260],
+        // Neon (tall spikes at ~3, 9, 17, 23; sharper drops around 5, 11, 19, 25)
+        name: 'NoShow Quote',
+        data: [240, 260, 690, 640, 250, 390, 280, 420, 740, 270, 380, 660, 300, 700, 260],
     },
     {
-        name: 'Pink',
-        data: [120, 100, 80, 60, 220, 40, 300, 20, 260, 80, 340, 60, 240, 80, 220],
+        // Pink (low, very jagged with deep dips around 5, 9, 19)
+        name: 'Lead-Close-Verhaltinis',
+        data: [180, 160, 150, 140, 60, 120, 70, 260, 50, 240, 80, 260, 220, 240, 210],
     },
 ];
+
 
 const BASE_OPTIONS = {
     chart: {

@@ -41,13 +41,13 @@ export default function CsoBoard() {
                                             <MonthDropdown />
                                         </div>
                                     </div>
-                                    <div className="w-full h-[300px]">
+                                    <div className="w-full h-[300px] strecth">
                                         <CsoChartMinimalStack
                                             categories={['27', '29', '1', '3', '5', '7', '9', '11', '13', '15', '17', '19', '21', '23', '25']}
                                             series={[
-                                                { name: 'A', data: [18, 10, 8, 3, 22, 28, 12, 6, 24, 7, 5, 20, 8, 10, 26] },   // cyan
-                                                { name: 'B', data: [14, 9, 5, 2, 8, 10, 9, 2, 12, 3, 2, 9, 6, 5, 12] },        // yellow
-                                                { name: 'C', data: [12, 7, 4, 1, 6, 9, 6, 1, 10, 2, 1, 7, 5, 6, 11] },         // green
+                                                { name: 'Umsatz', data: [18, 10, 8, 3, 22, 28, 12, 6, 24, 7, 5, 20, 8, 10, 26] },   // cyan
+                                                { name: 'Werbeausgabe', data: [14, 9, 5, 2, 8, 10, 9, 2, 12, 3, 2, 9, 6, 5, 12] },        // yellow
+                                                { name: 'Geldeingang', data: [12, 7, 4, 1, 6, 9, 6, 1, 10, 2, 1, 7, 5, 6, 11] },         // green
                                             ]}
                                             height={300}
                                         />
